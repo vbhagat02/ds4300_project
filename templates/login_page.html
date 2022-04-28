@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<!-- Metadata -->
+<head>
+  <meta charset='utf-8'>
+
+  <!-- Title -->
+  <title>Housing Recommendation System</title>
+  
+  <!-- CSS Styling -->
+  <link rel='stylesheet' href='style.css'>
+
+</head>
+
+<!-- Main page content -->
+<body>
+
+<!-- Writeup -->
+<div class='content-column'>
+    <h1>Sublet Search</h1>
+        
+    <p>
+      <strong>Vedant Bhagat</strong>, <strong>Deeptha Narasimhan</strong>, <strong>Brandon Onyejekwe</strong>, <strong>Sarah Costa</strong>, <strong>Kreena Totala</strong>
+    </p>
+        
+    <p>Final Project for
+      <a href='https://www.ccs.neu.edu/home/rachlin/nosql/'>DS4300 S22: Large Scale Information Storage and Retrival</a>, taught by Professor Rachlin.</a>
+    </p>
+
+    <h1>Description</h1>
+        
+    <p>
+      This system was designed to find housing that fits your specified preferences. We will query our database and return listings of places that will fit best for you.
+    </p>
+</div>
+
+<div class = "container">
+    <h1>Sign In to Your Account</h1>
+</div>
+
+<form id="frm1" action="user_profile.html">
+  Username: <input type="text" name="username"><br>
+  Password: <input type="text" name="password"><br><br>
+  <input type="button" onclick="myFunction()" value="Submit">
+</form>
+
+
+
+
+<!--
+<form method="POST" action="user_profile.html" enctype=multipart/form-data id='frm'> 
+    <div class= "container">
+        <label for="username">Username: </label>
+        <input type="text" class="form-control" id ="username" name="username">
+    </div><br>
+    <div class= "container">
+        <label for="password">Password: </label>
+        <input type="text" class="form-control" id="password" name="password">
+    </div><br>
+    <div class= "container">
+        <button type="submit" class="btn btn-primary" onclick="get_username()">Login</button>
+    </div>
+</form>
+-->
+
+<div class = "container">
+    <p>Site Last Updated: 19 April 2022</p>
+</div>
+
+<script src='main.js'></script>
+</body>
+</html>
