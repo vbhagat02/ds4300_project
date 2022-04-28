@@ -2,10 +2,9 @@ from flask import Blueprint, render_template, request, flash, redirect, url_for,
 from flask_login import login_user, logout_user, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
 from werkzeug.utils import secure_filename
-from ds4300_project import ALLOWED_EXTENSIONS, db, get_user, get_user_by_email, insert_user, User, app
 import os
 from db_utils import get_user, insert_listing, insert_user
-
+from __init__ import User, Listing
 
 auth = Blueprint('auth', __name__)
 

@@ -1,7 +1,6 @@
 from flask import Flask
 from flask_login import LoginManager, UserMixin
 from flask_pymongo import PyMongo
-import yaml
 from werkzeug.security import check_password_hash
 
 app = Flask(__name__)
@@ -39,8 +38,9 @@ class User(UserMixin):
 
 
 class Listing():
-    def _init__(self, uid, street, city, state, zip, bed, bath, rent):
+    def _init__(self, uid, listing_id, street, city, state, zip, bed, bath, rent):
         self.user_id = uid
+        self.listing_id = listing_id
         self.street = street
         self.city = city
         self.state = state
